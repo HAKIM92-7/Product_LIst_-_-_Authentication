@@ -48,6 +48,40 @@ Product.find({})
 })
 
 
+
+//@method  GET /products/:id
+//@desc  get product by id 
+
+
+router.get('/:id' , (req,res) => {
+
+Product.findById(req.params.id)
+.then((product) => res.send({msg : "product by id" , product}))
+.catch((err) => res.send('server error!'))
+
+
+
+
+
+}
+
+
+
+
+
+
+
+)
+
+
+
+
+
+
+
+
+
+
 //@method PUT /products/:id
 //@desc  update a product 
 

@@ -4,11 +4,16 @@
   "description": "workshop mongoose",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "Hakim Barouni",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.5",
     "nodemon": "^2.0.7"
