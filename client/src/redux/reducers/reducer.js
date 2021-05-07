@@ -1,4 +1,4 @@
-import {GET_PRODUCTS , GET_PRODUCT_BY_ID} from './actions/actionsTypes'
+import {GET_PRODUCTS , GET_PRODUCT_BY_ID} from '../actions/actionsTypes'
 
 
 const initialstate ={

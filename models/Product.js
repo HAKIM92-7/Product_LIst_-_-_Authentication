@@ -26,4 +26,4 @@ description : String
 
 
 
-module.exports = mongoose.model('productsList' , productSchema)
+module.exports = mongoose.model('products' , productSchema)

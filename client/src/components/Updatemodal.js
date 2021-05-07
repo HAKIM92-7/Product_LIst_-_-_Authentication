@@ -17,7 +17,7 @@ const customStyles = {
 
 function UpdateModal ({modalIsOpen , setIsOpen , id}){
  
-  const productToUpdate = useSelector(state => state.productToUpdate)
+  const productToUpdate = useSelector(state => state.reducer.productToUpdate)
 
 
 useEffect(() => {

@@ -6,4 +6,15 @@ export const DELETE_PRODUCT = "DELETE_PRODUCT"
 export const UPDATE_PRODUCT = "UPDATE_PRODUCT"
 export const UPDATE_PRODUCT_FAIL = "UPDATE_PRODUCT_FAIL"
 export const GET_PRODUCT_BY_ID  = "GET_PRODUCT_BY_ID"
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS"
+export const REGISTER_FAIL = "REGISTER_FAIL"
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
+export const LOGIN_FAIL = "LOGIN_FAIL"
+export const LOGOUT = "LOGOUT"
+export const LOAD_USER = "LOAD_USER"
+export const LOAD_USER_FAIL  = "LOAD_USER_FAIL"
+
+
+
+
 

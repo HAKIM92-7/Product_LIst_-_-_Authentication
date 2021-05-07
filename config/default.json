@@ -1,0 +1,7 @@
+{
+   "MONGOURI" : "mongodb+srv://hakim92:est1511919@productlist.5htwo.mongodb.net/Product_List?retryWrites=true&w=majority" ,
+   "jwtSecret" : "gomycode"
+
+
+
+}

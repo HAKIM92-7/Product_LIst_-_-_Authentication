@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import {useDispatch , useSelector} from 'react-redux'
 import { getProducts , updateProduct } from '../redux/actions/actions'
+import {useHistory} from "react-router-dom"
 import AddModal from './AddModal'
 import UpdateModal from './Updatemodal'
 
@@ -15,15 +16,25 @@ useEffect(() => {
 
 }, [])
 
+const history = useHistory()
+
+const isAuth = useSelector(state => state.auth.isAuth)
+
 const [modalIsOpen , setIsOpen] = useState(false)
 
 const [id , setId] = useState(null)
 
+if(!isAuth) {
+
+history.push('/login')
+
+
+}
 
 
 const dispatch = useDispatch()
 
-const products = useSelector(state => state.products)
+const products = useSelector(state => state.reducer.products)
 
     return (
 
